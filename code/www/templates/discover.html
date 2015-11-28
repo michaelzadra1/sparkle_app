@@ -1,0 +1,21 @@
+<ion-view view-title="Discover" class="discover-page">
+  <ion-content scroll="false" on-swipe-up="onSwipe()">
+
+    <td-cards>
+
+      <td-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)" on-partial-swipe="cardPartialSwipe(amt)" class="card-{{$index}}">
+        <div class="image">
+          <div class="no-text">NOPE</div>
+          <img ng-src="{{card.image}}">
+          <div class="yes-text">LIKE</div>
+        </div>
+        <div class="item">
+        <h2>{{card.title}}</h2>
+        <p>{{card.artist}}</p>
+      </div>
+      </td-card>
+    </td-cards>
+
+
+  </ion-content>
+</ion-view>
