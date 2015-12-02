@@ -3,7 +3,7 @@
 
     <td-cards>
 
-      <td-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)" on-partial-swipe="cardPartialSwipe(amt)" class="card-{{$index}}">
+      <td-card ng-repeat="card in cards" on-destroy="" on-swipe-left="cardSwipedLeft(0)" on-swipe-right="cardSwipedRight(0)" on-partial-swipe="cardPartialSwipe(amt)" class="card-{{0}}">
         <div class="image">
           <div class="no-text">NOPE</div>
           <img ng-src="{{card.image}}">

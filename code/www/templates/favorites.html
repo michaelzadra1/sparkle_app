@@ -2,7 +2,7 @@
   <ion-content>
 
     <ion-list>
-      <ion-item ng-repeat="match in matches" class="item-avatar">
+      <ion-item ng-repeat="match in matches" class="item-avatar" ng-click="playBio($index)" on-hold="playName($index)">
         <img ng-src="{{match.image_small}}">
           <h2>{{match.title}}</h2>
           <p>{{match.artist}}</p>
